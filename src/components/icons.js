@@ -1,15 +1,24 @@
 const Icons = () => {
     return (
-        <>
-            <div class="flex-row items-center justify-center">
-                <i class="fa fa-edit icon-medium-effect icon-effect-2"></i>
-                <i class="fa fa-solid fa-star"></i>
-                <i class="fa fa-solid fa-cubes"></i>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                </svg>
-            </div>
-        </>
+        <div class="flex flex-row justify-center pt-20 gap-20">
+           
+            <span class="inline-flex items-center justify-center h-20 w-20 rounded-full border-2 border-red  hover:text-white bg-white hover:bg-red">
+                {/* <i class="fa fa-brands fa-facebook text-white" style={{ fontSize: '32px' }}></i> */}
+                <i class="fa fa-edit icon-medium-effect icon-effect-2 text-red hover:text-white " style={{fontSize:'32px'}}></i>
+            </span>
+            <span class="inline-flex items-center justify-center h-20 w-20 rounded-full border-2 border-red bg-white hover:bg-red">
+                {/* <i class="fa fa-brands fa-twitter text-white" style={{ fontSize: '32px' }}></i> */}
+                <i class="fa fa-solid fa-star text-red hover:text-white" style={{fontSize:'32px'}}></i>
+            </span>
+            <span class="inline-flex items-center justify-center h-20 w-20 rounded-full border-2 border-red bg-white hover:bg-red">
+                {/* <i class=" fa fa fa-youtube text-white" style={{ fontSize: '32px' }}></i> */}
+                <i class="fa fa-solid fa-cubes text-red hover:text-white" style={{fontSize:'32px'}}></i>
+            </span>
+            <span class="inline-flex items-center justify-center h-20 w-20 rounded-full border-2 border-red bg-white hover:bg-red">
+                {/* <i class="fa fa-brands fa-linkedin text-white" style={{ fontSize: '32px' }}></i> */}
+                <i class="fa fa-university text-red hover:text-white " style={{fontSize:'32px'}} aria-hidden="true"></i>
+            </span>
+        </div>
     )
 }
 
