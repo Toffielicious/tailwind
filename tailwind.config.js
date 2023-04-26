@@ -19,8 +19,21 @@ module.exports = {
         backgroundImage: '-webkit - linear - gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0))',
       },
 
-      text:{
-        textsize: '16px'
+      fontSize:{
+        sm: '15px',
+        ssm: '13.3333px',
+        sssm: '12px',
+        ssssm: '10.6667px',
+      },
+
+      padding:{
+        tlb:'0px 0px 0px',
+        // lr:'0px 16px'
+        ft:'20px 0px 10px',
+      },
+
+      borderWidth:{
+        bord: '1px',
       },
 
       colors: {
@@ -29,19 +42,19 @@ module.exports = {
         graytext: '#666',
         red: '#880000',
         blackish: '#555555',
-        400: '#6B7280',
-        500: '#515761',
+        grayer: '#666',
+        grayest: '#888888',
         600: '#383C43',
         700: '#1E2024',
         800: '#050506',
         900: '#000000',
         950: '#000000'
       },
-
-
-      line2: {
-
-      }
+      fontFamily: {
+        sanscinzel: ['Cinzel', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+        mono: ['Courier Prime', 'monospace'],
+      },
 
     },
   },
