@@ -33,6 +33,10 @@ module.exports = {
         ft:'20px 0px 10px',
       },
 
+      screens:{
+        smaller:"350px"
+      },
+
       borderWidth:{
         bord: '1px',
       },

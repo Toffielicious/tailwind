@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <div className="flex flex-row justify-center  ">
+            <div className="flex flex-row justify-center min-[350px]:flex-col ">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <div>
                     <div class="flex flex-col p-10 m-0 mt-8 ">
@@ -21,57 +21,57 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col p-10 mt-8 ">
-                    <p className="text-sm font-bold text-red uppercase pb-4">QUICK LINKS</p>
-                    <div class="flex flex-col gap-2">
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer ">About PUP</a>
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Admission Information</a>
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Branchesa and Campuses</a>
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Academic Programs</a>
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Transparency Seal</a>
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Bid Notices and Invitation</a>
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">International Affairs</a>
-                        <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Jobs for PUPians</a>
-
+                    <div class="flex flex-col gap-4 sm:gap-2 sm:text-xs">
+                        <p class="text-sm font-bold text-red uppercase pb-4">QUICK LINKS</p>
+                        <div class="flex flex-col gap-2">
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">About PUP</a>
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Admission Information</a>
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Branches and Campuses</a>
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Academic Programs</a>
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Transparency Seal</a>
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Bid Notices and Invitation</a>
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">International Affairs</a>
+                            <a href="" class="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Jobs for PUPians</a>
+                        </div>
                     </div>
+
                 </div>
-                <div className="flex flex-col p-10 ">
-                    <p className="text-sm font-bold text-red uppercase pb-4">KEEP IN TOUCH</p>
-                    <div class="flex flex-wrap justify-center gap-4 sm:justify-start">
-                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-brands fa-facebook text-white"  style={{fontSize:'32px'}}   ></i>
+                <div class="flex flex-col items-center p-5 sm:p-10">
+                    <p class="text-sm font-bold text-red uppercase pb-2 sm:pb-4">KEEP IN TOUCH</p>
+                    <div class="flex flex-wrap justify-center gap-2 sm:gap-4 sm:justify-start">
+                        <span class="inline-flex items-center justify-center h-8 w-8 sm:h-12 sm:w-12 rounded-full bg-red hover:bg-blue-500">
+                            <i class="fa fa-brands fa-facebook text-white" style={{ fontSize: '16px' }}></i>
                         </span>
-                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-brands fa-twitter text-white"  style={{fontSize:'32px'}}></i>
+                        <span class="inline-flex items-center justify-center h-8 w-8 sm:h-12 sm:w-12 rounded-full bg-red hover:bg-blue-500">
+                            <i class="fa fa-brands fa-twitter text-white" style={{ fontSize: '16px' }}></i>
                         </span>
-                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa fa-youtube text-white"  style={{fontSize:'32px'}}></i>
+                        <span class="inline-flex items-center justify-center h-8 w-8 sm:h-12 sm:w-12 rounded-full bg-red hover:bg-blue-500">
+                            <i class="fa fa fa-youtube text-white" style={{ fontSize: '16px' }}></i>
                         </span>
-                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-brands fa-linkedin text-white"  style={{fontSize:'32px'}}></i>
+                        <span class="inline-flex items-center justify-center h-8 w-8 sm:h-12 sm:w-12 rounded-full bg-red hover:bg-blue-500">
+                            <i class="fa fa-brands fa-linkedin text-white" style={{ fontSize: '16px' }}></i>
                         </span>
-                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-solid fa-rss text-white"  style={{fontSize:'32px'}}></i>
+                        <span class="inline-flex items-center justify-center h-8 w-8 sm:h-12 sm:w-12 rounded-full bg-red hover:bg-blue-500">
+                            <i class="fa fa-solid fa-rss text-white" style={{ fontSize: '16px' }}></i>
                         </span>
-                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-brands fa-spotify text-white" style={{fontSize:'32px'}}></i>
+                        <span class="inline-flex items-center justify-center h-8 w-8 sm:h-12 sm:w-12 rounded-full bg-red hover:bg-blue-500">
+                            <i class="fa fa-brands fa-spotify text-white" style={{ fontSize: '16px' }}></i>
                         </span>
                     </div>
-
-                    <p className="text-sm font-bold text-red uppercase pb-4 pt-5">CONTACT US</p>
-                    <div className="flex gap-2">
-                        <p className="text-graytext text-textsize">Phone:</p>
+                    <p class="text-sm font-bold text-red uppercase pb-2 sm:pb-4 pt-4 sm:pt-5">CONTACT US</p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <p class="text-graytext text-textsize">Phone:</p>
                         <p class="font-medium text-blackish">(+63 2) 5335-1PUP (5335-1787) or 5335-1777</p>
                     </div>
-                    <div className="flex gap-2">
-                        <p className="text-graytext text-textsize">Email:</p>
+                    <div class="flex flex-col sm:flex-row gap-2 pt-2 sm:pt-0">
+                        <p class="text-graytext text-textsize">Email:</p>
                         <p class="font-medium text-blackish">inquire@pup.edu.ph</p>
-
                     </div>
-
-                    <p className="text-sm font-bold text-red uppercase pb-4 pt-5">PUPWEBSITE 10</p>
-                    <p className="text-graytext text-textsize">Terms of Use | Privacy Statement | About PUPWebSite</p>
+                    <p class="text-sm font-bold text-red uppercase pb-2 sm:pb-4 pt-4 sm:pt-5">PUPWEBSITE 10</p>
+                    <p class="text-graytext text-textsize">Terms of Use | Privacy Statement | About PUPWebSite</p>
                 </div>
             </div>
+
             <section />
             <p class="flex justify-center text-xs text-blackish pb-12 font-normal ">© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
         </>
