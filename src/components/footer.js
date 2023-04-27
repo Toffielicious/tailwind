@@ -1,10 +1,10 @@
 const Footer = () => {
     return (
         <>
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-row justify-center  ">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <div>
-                    <div class="flex flex-col p-10 m-0">
+                    <div class="flex flex-col p-10 m-0 mt-8 ">
                         <p className="text-sm font-bold text-red uppercase pb-4">ONLINE SERVICES</p>
                         <div class="flex flex-col gap-2">
                             <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer ">PUP WebMail</a>
@@ -20,7 +20,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col p-10">
+                <div className="flex flex-col p-10 mt-8 ">
                     <p className="text-sm font-bold text-red uppercase pb-4">QUICK LINKS</p>
                     <div class="flex flex-col gap-2">
                         <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer ">About PUP</a>
@@ -34,28 +34,29 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className="flex flex-col p-10">
+                <div className="flex flex-col p-10 ">
                     <p className="text-sm font-bold text-red uppercase pb-4">KEEP IN TOUCH</p>
-                    <div class="flex flex-row gap-4">
+                    <div class="flex flex-wrap justify-center gap-4 sm:justify-start">
                         <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-brands fa-facebook text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-brands fa-facebook text-white"  style={{fontSize:'32px'}}   ></i>
                         </span>
                         <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-brands fa-twitter text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-brands fa-twitter text-white"  style={{fontSize:'32px'}}></i>
                         </span>
                         <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class=" fa fa fa-youtube text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa fa-youtube text-white"  style={{fontSize:'32px'}}></i>
                         </span>
                         <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-brands fa-linkedin text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-brands fa-linkedin text-white"  style={{fontSize:'32px'}}></i>
                         </span>
                         <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
-                            <i class="fa fa-solid fa-rss text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-solid fa-rss text-white"  style={{fontSize:'32px'}}></i>
                         </span>
                         <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red hover:bg-blue-500">
                             <i class="fa fa-brands fa-spotify text-white" style={{fontSize:'32px'}}></i>
                         </span>
                     </div>
+
                     <p className="text-sm font-bold text-red uppercase pb-4 pt-5">CONTACT US</p>
                     <div className="flex gap-2">
                         <p className="text-graytext text-textsize">Phone:</p>
@@ -70,11 +71,9 @@ const Footer = () => {
                     <p className="text-sm font-bold text-red uppercase pb-4 pt-5">PUPWEBSITE 10</p>
                     <p className="text-graytext text-textsize">Terms of Use | Privacy Statement | About PUPWebSite</p>
                 </div>
-
-
             </div>
             <section />
-            <p class="flex justify-center text-xs text-blackish pb-12 font-normal">© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
+            <p class="flex justify-center text-xs text-blackish pb-12 font-normal ">© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
         </>
     )
 }
