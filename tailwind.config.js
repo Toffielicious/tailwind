@@ -34,7 +34,7 @@ module.exports = {
       },
 
       screens:{
-        smaller:"350px"
+        smallest:"200px"
       },
 
       borderWidth:{
@@ -49,16 +49,19 @@ module.exports = {
         blackish: '#555555',
         grayer: '#666',
         grayest: '#888888',
-        600: '#383C43',
-        700: '#1E2024',
-        800: '#050506',
-        900: '#000000',
-        950: '#000000'
+        fb: '#337ab7',
+        tt: '#63cdf1',
+        yt: '#cc3300',
+        li: '#90cadd',
+        wf: '#f25b00',
+        sf: '#1db854',
+
       },
       fontFamily: {
         sanscinzel: ['Cinzel', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
         mono: ['Courier Prime', 'monospace'],
+        noto: ['noto sans', 'sans-serif']
       },
 
     },

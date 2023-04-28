@@ -1,3 +1,5 @@
+
+
 const Navbar = () => {
 
 
@@ -11,7 +13,10 @@ const Navbar = () => {
                 backgroundPosition: "center center",
                 backgroundSize: "cover",
             }}>
-                <div>
+
+                {/* old code with btn */}
+
+                {/* <div className="px-10 mx-auto col-md-12">
                     <div class="flex flex-wrap items-center justify-between h-16">
                         <div class="flex-shrink-0 flex flex-row pl-2 sm:pl-4 md:pl-20 gap-3 ">
                             <img src="PUPLogo.png" class="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20" />
@@ -41,9 +46,58 @@ const Navbar = () => {
 
                             </div>
                         </div>
-                        <input style={{ boxShadow: 'i' }} placeholder="Type keyword here..." class="border-bord"></input>
+                        <div>
+                            <input placeholder="Type keyword here..." class="inputSearch" />
+                        </div>
                     </div>
+                </div> */}
+
+                <div className="px-64 mx-auto col-md-12 flex flex-row justify-between">
+                    <div>
+                        
+                    </div>
+
+                    <div>
+                        <img src="PUPLogo.png" class="max-w-[90px] max-h-[90px]" />
+                    </div>
+
+                    <div class="flex flex-col font-sanscinzel pt-4">
+                        <a href="#" class="text-red text-sm font-bold flex flex-row gap-2 hover:underline" style={{ fontSize: '18px' }} >
+                            Polytechnic University of the Philippines
+                        </a>
+                        <a href="#" class="text-blackish text-sm font-bold" style={{ fontSize: '15px' }}>
+                            The Country's 1st PolytechnicU
+                        </a>
+                        <ul className="flex flex-row gap-11 pt-4 text-red font-bold">
+                            <li><a href="#">About PUP</a></li>
+                            <li><a href="#">Academic</a></li>
+                            <li><a href="#">Students</a></li>
+                            <li><a href="#">Research</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-row my-8 " >
+                        <div className='flex hidden h-6 rounded-sm lg:flex ' style={{ paddingLeft: '320px' }}>
+                            <input placeholder="Type keyword here..." class="inputSearch" />
+                            <button disabled className='flex flex-wrap content-center justify-center text-white bg-red hover:cursor-pointer rounded-r-sm h-7 w-7'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
                 </div>
+
+
+
+
+
+
+
+
+
             </div>
         </nav>
 

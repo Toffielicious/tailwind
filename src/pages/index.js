@@ -4,7 +4,9 @@ import Navbar2 from '@/components/navbar'
 import Footer2 from '@components/footer2.js'
 import Icons from '@components/icons.js'
 import React from "react";
-import Slider from "react-slick";
+// import Slide from '@components/slider.js'
+
+
 
 
 
@@ -16,8 +18,13 @@ export default function home() {
         <Navbar2 />
 
       </section>
+      <section class="bg-gray "> 
 
-      <section class="bg-gray">
+    {/* <Slide /> */}
+
+      </section>
+
+      <section >
         <Icons />
       </section>
 
