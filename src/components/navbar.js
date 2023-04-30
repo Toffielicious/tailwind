@@ -6,12 +6,7 @@ const Navbar = () => {
     return (
         <nav class="bg-white-800">
             <div class="mx-auto px-2 sm:px-4 md:px-6 lg:px-8" style={{
-                lineHeight: "23px",
-                fontWeight: 300,
-                backgroundImage: "url(bg.jpg)",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center center",
-                backgroundSize: "cover",
+                lineHeight: "23px", fontWeight: 300, backgroundImage: "url(bg.jpg)", backgroundRepeat: "no-repeat", backgroundPosition: "center center", backgroundSize: "cover",
             }}>
 
                 {/* old code with btn */}
@@ -54,7 +49,7 @@ const Navbar = () => {
 
                 <div className="px-64 mx-auto col-md-12 flex flex-row justify-between">
                     <div>
-                        
+
                     </div>
 
                     <div>

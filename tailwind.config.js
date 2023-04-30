@@ -4,6 +4,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -19,7 +20,7 @@ module.exports = {
         backgroundImage: '-webkit - linear - gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0))',
       },
 
-      fontSize:{
+      fontSize: {
         sm: '15px',
         ssm: '13.3333px',
         sssm: '12px',
@@ -27,17 +28,22 @@ module.exports = {
         m: '32px'
       },
 
-      padding:{
-        tlb:'0px 0px 0px',
+      padding: {
+        tlb: '0px 0px 0px',
         // lr:'0px 16px'
-        ft:'20px 0px 10px',
+        ft: '20px 0px 10px',
+        sldr: '',
       },
 
-      screens:{
-        smallest:"200px"
+      paddingTop:{
+        sdlr: '400px'
       },
 
-      borderWidth:{
+      screens: {
+        smallest: "200px"
+      },
+
+      borderWidth: {
         bord: '1px',
       },
 
@@ -55,6 +61,8 @@ module.exports = {
         li: '#90cadd',
         wf: '#f25b00',
         sf: '#1db854',
+        l: '#F0F0F0',
+        mb:'#111',
 
       },
       fontFamily: {
@@ -66,5 +74,9 @@ module.exports = {
 
     },
   },
-  plugins: [],
+
+
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
