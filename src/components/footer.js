@@ -1,7 +1,8 @@
 const Footer = () => {
     return (
-        <div class=" ">
-            <div className=" footerResponsive flex lg:flex-row lg:justify-center sm:flex-col">
+        <>
+            <div className="flex flex-row justify-center">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"></link>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <div>
                     <div class="flex flex-col p-10 m-0">
@@ -37,23 +38,23 @@ const Footer = () => {
                     <p className="text-sm font-bold text-red uppercase pb-4">KEEP IN TOUCH</p>
                     <div class="flex flex-row gap-4 ">
                         <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-fb">
-                            <i class="fa fa-brands fa-facebook text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-brands fa-facebook text-white" style={{ fontSize: '32px' }}></i>
                         </span>
                         <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-tt">
-                            <i class="fa fa-brands fa-twitter text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-brands fa-twitter text-white" style={{ fontSize: '32px' }}></i>
                         </span>
                         <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-yt">
-                            <i class="fa fa-youtube-play text-white" style={{fontSize:'32px'}}></i>
-                            
+                            <i class="fa fa-youtube-play text-white" style={{ fontSize: '32px' }}></i>
+
                         </span>
                         <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-li">
-                            <i class="fa fa-brands fa-linkedin text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-brands fa-linkedin text-white" style={{ fontSize: '32px' }}></i>
                         </span>
                         <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-wf">
-                            <i class="fa fa-solid fa-rss text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-solid fa-rss text-white" style={{ fontSize: '32px' }}></i>
                         </span>
                         <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-sf">
-                            <i class="fa fa-brands fa-spotify text-white" style={{fontSize:'32px'}}></i>
+                            <i class="fa fa-brands fa-spotify text-white" style={{ fontSize: '32px' }}></i>
                         </span>
                     </div>
                     <p className="text-sm font-bold text-red uppercase pb-0 pt-5">CONTACT US</p>
@@ -69,20 +70,20 @@ const Footer = () => {
 
                     <p className="text-sm font-bold text-red uppercase  pt-5">PUPWEBSITE 10</p>
                     <div className="flex flex-row gap-2">
-                    <a className="text-graytext text-textsize hover:underline hover:cursor-pointer">Terms of Use </a>
-                    <p className="text-graytext text-textsize hover:underline ">|</p>
-                    <a className="text-graytext text-textsize hover:underline hover:cursor-pointer">Privacy Statement</a>
-                    <p className="text-graytext text-textsize hover:underline ">|</p>
-                    <a className="text-graytext text-textsize hover:underline cursor-pointer">About PUPWebSite</a>
+                        <a className="text-graytext text-textsize hover:underline hover:cursor-pointer">Terms of Use </a>
+                        <p className="text-graytext text-textsize hover:underline ">|</p>
+                        <a className="text-graytext text-textsize hover:underline hover:cursor-pointer">Privacy Statement</a>
+                        <p className="text-graytext text-textsize hover:underline ">|</p>
+                        <a className="text-graytext text-textsize hover:underline cursor-pointer">About PUPWebSite</a>
                     </div>
-                    
+
                 </div>
 
 
             </div>
             <section />
             <p class="flex justify-center text-xs text-blackish pb-12 font-normal">© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
-        </div>
+        </>
     )
 }
 

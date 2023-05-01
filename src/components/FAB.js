@@ -2,7 +2,7 @@ const fab = () => {
     return (
 
         <>
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"></link>
+            
 
             <div class="adminActions ">
                 <input type="" name="adminToggle" class="adminToggle" />
@@ -14,7 +14,6 @@ const fab = () => {
                 <a class="adminButton2 " href="#!"><i class="fa fa-solid fa-chevron-up" style={{fontSize:'36px'}}></i></a>
             </div>
         </>
-
 
     )
 }
