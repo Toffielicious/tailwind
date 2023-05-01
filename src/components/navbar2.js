@@ -3,15 +3,15 @@
 function Navigation() {
   return (
     <nav
-      className="flex flex-wrap items-center justify-between m-0 text-lg font-noto  text-gray-500 bg-white bg-center bg-cover backdrop-contrast-200 sm:text-xl"
+      className="flex flex-wrap items-center justify-between m-0 text-lg font-noto  text-gray-500 bg-white bg-center bg-cover backdrop-contrast-200 sm:text-xl "
       style={{ lineHeight: "23px", fontWeight: 300, backgroundImage: "url(bg.jpg)", vbackgroundRepeat: "no-repeat", backgroundPosition: "top ", backgroundSize: "cover", }}
     >
-      <div className="px-10 mx-auto col-md-12">
+      <div className="px-10 mx-auto col-md-12 ">
         <div className="">
           <ul className="flex justify-center space-x-1">
             <li>
               <a href="#">
-                <img src="govph.png" className="px-4 center hover:bg-red" />
+                <img src="govph.png" className="px-4 center hover:bg-red object-cover" />
               </a>
             </li>
             <li className="pt-1">
@@ -33,7 +33,7 @@ function Navigation() {
               <a href="#"></a>
               <a href="#" className="font-normal  hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer" style={{ padding: '10px 16px' }}>Bid Notices and Invitation</a>
             </li>
-            <li className="pt-1 pl-72">
+            <li className="pt-1 xl:pl-72">
               <a href="#" className=" font-normal pt-1 justify-self-end center hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer" style={{ padding: '10px 16px' }}>Contact Us</a>
             </li>
           </ul>

@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-        <>
-            <div className="flex flex-row justify-center">
+        <div class=" ">
+            <div className=" footerResponsive flex lg:flex-row lg:justify-center sm:flex-col">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <div>
                     <div class="flex flex-col p-10 m-0">
@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
             <section />
             <p class="flex justify-center text-xs text-blackish pb-12 font-normal">© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
-        </>
+        </div>
     )
 }
 
