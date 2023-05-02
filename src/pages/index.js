@@ -264,7 +264,7 @@ export default function home() {
       <hr class='line mt-10'></hr>
 
 
-      <section class="flex flex-col space-y-4 lg:mx-8 embed-links items-center justify-center my-6 " style={{ marginBottom: '-55px' }}>
+      <section class="flex flex-col space-y-4 xl:mx-8 embed-links sm:w-full items-center justify-center my-6 " style={{ marginBottom: '-55px' }}>
         <div className='flex flex-row embedResponsive sm:flex-col md:flex-col lg:flex-row '>
           <div className="flex flex-wrap justify-center mt-10 twitty border-grey">
             <div className="flex justify-center w-3/4 h-auto ">
@@ -274,7 +274,7 @@ export default function home() {
             </div>
           </div>
 
-          <div class="flex flex-col space-y-4 items-center justify-center embed-links lg:m-6 pt-4">
+          <div class="flex flex-col space-y-4 items-center justify-center embed-links xl:m-6 pt-4">
             <iframe class="youtube " data-height="350" src="https://www.youtube.com/embed/EVp6JBwTudk?list=UU3D3_jrSi3sYmx5L5p5RAwA" title="The Observer Online: Tanglaw Fest 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe class="spotify md:mb-5" data-height="350" style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/6hSNhWq3gSGcSouucc8kl0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>

@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <div className="flex flex-row justify-center">
+            <div className="flex lg:flex-row justify-center sm:flex-col md:flex-col media-links">
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"></link>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <div>

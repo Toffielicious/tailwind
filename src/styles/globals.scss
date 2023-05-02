@@ -187,6 +187,127 @@ input::placeholder {
   width: 350px;
 }
 
+@media only screen and (min-width: 640px) and (max-width: 768px){
+
+  // .youtube{
+  //   width: 500px;
+  // }
+  .embedResponsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+
+  }
+
+  .embed-links {
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1280px){
+  // .embedResponsive {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   // align-items: center;
+  //   margin: 0;
+  //   margin-left: 0;
+  //   margin-right: 0;
+  //   margin-bottom: 20px;
+  //   width: 100%;
+
+  // }
+  .embed-links {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .spotify {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .youtube {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .embed-links {
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  } 
+  .embedResponsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+
+  }
+
+  .pics{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+}
+
+
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+
+  .pics{
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  .spotify {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .youtube {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .embed-links {
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  
+  
+}
+
 
 
 @media only screen and (min-width: 280px) and (max-width: 640px) {
@@ -200,7 +321,7 @@ input::placeholder {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
-
+    width: 100%;
 
   }
 
@@ -208,6 +329,7 @@ input::placeholder {
     margin: 0;
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
   }
 
 
@@ -216,11 +338,18 @@ input::placeholder {
   }
 
   .youtube {
-    width: 580px
+    width: 100px
   }
 
   .pics {
     width: 100%;
+  }
+
+  .media-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
   }
 
 }
