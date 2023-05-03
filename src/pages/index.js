@@ -125,8 +125,8 @@ export default function home() {
 
 
 
-            <div className='flex flex-col mw'>
-              <div class="flex flex-row justify-between ">
+            <div className='flex flex-col mw '>
+              <div class="flex flex-row justify-between sliderMargin">
                 <a className=" font-bold  m-0 text-red hover:cursor-pointer">Latest News from the University</a>
                 <div className='flex-row gap-1'>
 
@@ -143,7 +143,7 @@ export default function home() {
                 </div>
               </div>
 
-              <div className='flex flex-row pb-4'>
+              <div className='flex flex-row pb-4 sliderMargin'>
                 <div class=" flex flex-row">
                   <p className=' flex text-red justify-center items-center'>____________________________________</p>
                   <p className='text-l hideLine'>________________________</p>
@@ -152,10 +152,10 @@ export default function home() {
 
               <div className="mw">
 
-                <div>
+                <div className='sliderMargin'>
                   <Carousel showThumbs={false} autoPlay showArrows={true} showStatus={false} infiniteLoop={true} showIndicators={false}>
                     <div className=''>
-                      <img src="https://i.ibb.co/BV3VPxr/2023-04-26-phivolcs-commits-to-training-pup-on-redas.jpg" className='carouselPics object-cover' style={{ height: '480px' }} alt="" />
+                      <img src="https://i.ibb.co/BV3VPxr/2023-04-26-phivolcs-commits-to-training-pup-on-redas.jpg" className='carouselPics object-cover ' style={{ height: '480px' }} alt="" />
                       <div className='pt-7 text-left'>
                         <a className='text-red hover:underline hover:cursor-pointer font-bold '>PHIVOLCS commits to training PUP on REDAS</a>
                         <p className='pt-2'>April 26, 2023</p>
@@ -242,20 +242,24 @@ export default function home() {
             </div>
 
 
-            <div className='flex flex-col gap-3 justify-center '>
-              <img src="//i.imgur.com/vaNWHC9.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
-              <div className="img-container">
-                <img src="//i.imgur.com/T2sYWP4.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
+            <div className=''>
+              <div className='picsMargin flex flex-col gap-3 justify-center  '>
+                <img src="//i.imgur.com/vaNWHC9.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
+                <div className="img-container">
+                  <img src="//i.imgur.com/T2sYWP4.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
+                </div>
+                <div className="img-container">
+                  <img src="//i.imgur.com/jIaVBKM.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
+                </div>
+                <div className="img-container">
+                  <img src="//i.imgur.com/EryMqbT.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
+                </div>
+                <div className="img-container">
+                  <img src="//i.imgur.com/aqFGgGg.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
+                </div>
+
               </div>
-              <div className="img-container">
-                <img src="//i.imgur.com/jIaVBKM.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
-              </div>
-              <div className="img-container">
-                <img src="//i.imgur.com/EryMqbT.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
-              </div>
-              <div className="img-container">
-                <img src="//i.imgur.com/aqFGgGg.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />
-              </div>
+
             </div>
           </div>
         </div>
@@ -274,9 +278,11 @@ export default function home() {
             </div>
           </div>
 
-          <div class="flex flex-col space-y-4 items-center justify-center embed-links lg:m-6 pt-4">
-            <iframe class="youtube " data-height="350" src="https://www.youtube.com/embed/EVp6JBwTudk?list=UU3D3_jrSi3sYmx5L5p5RAwA" title="The Observer Online: Tanglaw Fest 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="spotify md:mb-5" data-height="350" style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/6hSNhWq3gSGcSouucc8kl0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="flex flex-col w-full lg:m-6 pt-4">
+            <div className='youtube-spotMargin flex flex-col space-y-4 items-center justify-center '>
+              <iframe class="youtube" data-height="350" src="https://www.youtube.com/embed/EVp6JBwTudk?list=UU3D3_jrSi3sYmx5L5p5RAwA" title="The Observer Online: Tanglaw Fest 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="spotify md:mb-5" data-height="350" style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/6hSNhWq3gSGcSouucc8kl0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
           </div>
         </div>
       </section>

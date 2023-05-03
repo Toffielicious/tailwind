@@ -103,20 +103,16 @@ input::placeholder {
 @media only screen and (max-width:1024px) {
 
   .carouselPics {
-    width: 500px;
+    width: 100%;
+  
   }
 
   .mw {
-    width: 95%;
-    margin: 15px;
-
-  }
-
-  .pics {
     width: 100%;
-
+  
   }
 
+  
 
 }
 
@@ -169,6 +165,28 @@ input::placeholder {
     width: 100%;
   }
 
+  .spotify {
+    width: 100%;
+  }
+
+  .youtube-spotMargin{
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  }
+
+  .spotify {
+    width: 100%;
+    
+  }
+
+  .youtube {
+    width: 100%;
+    
+  }
+
+
 
 }
 
@@ -218,6 +236,25 @@ input::placeholder {
     width: 100%;
   }
 
+  .picsMargin{
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+  }
+
+  .pics{
+    width: 100%;
+  }
+
+  .youtube-spotMargin{
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  }
+
+
 
 }
 
@@ -250,12 +287,12 @@ input::placeholder {
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   .spotify {
     width: 100%;
-    margin-left: 10px;
+    
   }
 
   .youtube {
     width: 100%;
-    margin-left: 10px;
+    
   }
 
   .embed-links {
@@ -279,9 +316,28 @@ input::placeholder {
 
   .pics{
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+    
   }
+
+  .sliderMargin{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .picsMargin{
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+  }
+
+  .youtube-spotMargin{
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  }
+
   
 }
 
@@ -289,20 +345,16 @@ input::placeholder {
 
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
 
-  .pics{
-    margin-left: 10px;
-    margin-right: 10px;
-
-  }
-
+  
   .spotify {
     width: 100%;
-    margin-left: 10px;
   }
 
   .youtube {
     width: 100%;
-    margin-left: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
   }
 
   .embed-links {
@@ -311,6 +363,12 @@ input::placeholder {
     margin-right: 0;
     width: 100%;
   }
+
+  .sliderMargin{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
 
   
   
@@ -341,14 +399,6 @@ input::placeholder {
   }
 
 
-  .spotify {
-    width: 580px;
-  }
-
-  .youtube {
-    width: 100px
-  }
-
   .pics {
     width: 100%;
   }
@@ -364,6 +414,7 @@ input::placeholder {
     display: none;
   }
 
+  
 }
 
 @media only screen and (min-width: 1024px) and (max-width:1280) {
@@ -406,6 +457,7 @@ input::placeholder {
 
   .youtube {
     width: 100%
+    
   }
 
   .embedResponsive {
