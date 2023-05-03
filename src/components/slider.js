@@ -9,7 +9,7 @@ const Slider = () =>{
       const slides = [
         {
             src:'b1.jpg',
-            text: 'PHIVOLCS commits to training PUP on REDAS'
+           
         },
         {
             src:'b2.jpg'
@@ -66,7 +66,7 @@ const Slider = () =>{
                 <   i class="fa fa-sharp fa-solid fa-chevron-right pl-2 text-white " style={{fontSize:'36px'}}></i>
                 </button>
             </div>
-</div>
+        </div>
 
       );
       

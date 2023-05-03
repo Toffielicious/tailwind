@@ -36,26 +36,40 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col p-10 gap-3">
                     <p className="text-sm font-bold text-red uppercase pb-4">KEEP IN TOUCH</p>
-                    <div class="flex flex-row gap-4 ">
-                        <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-fb">
-                            <i class="fa fa-brands fa-facebook text-white" style={{ fontSize: '32px' }}></i>
-                        </span>
-                        <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-tt">
-                            <i class="fa fa-brands fa-twitter text-white" style={{ fontSize: '32px' }}></i>
-                        </span>
-                        <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-yt">
-                            <i class="fa fa-youtube-play text-white" style={{ fontSize: '32px' }}></i>
+                    <div class="flex flex-row gap-4 icon-col ">
+                        
+                            <a href="https://www.facebook.com/ThePUPOfficial">
+                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-fb">
+                                    <i class="fa fa-brands fa-facebook text-white" style={{ fontSize: '32px' }}></i>
+                                </span>
+                            </a>
+                            <a href="https://twitter.com/ThePUPOfficial">
+                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-tt">
+                                    <i class="fa fa-brands fa-twitter text-white" style={{ fontSize: '32px' }}></i>
+                                </span>
+                            </a>
+                            <a href="https://www.youtube.com/user/pupcreatv">
+                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-yt">
+                                    <i class="fa fa-youtube-play text-white" style={{ fontSize: '32px' }}></i>
 
-                        </span>
-                        <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-li">
-                            <i class="fa fa-brands fa-linkedin text-white" style={{ fontSize: '32px' }}></i>
-                        </span>
-                        <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-wf">
-                            <i class="fa fa-solid fa-rss text-white" style={{ fontSize: '32px' }}></i>
-                        </span>
-                        <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-sf">
-                            <i class="fa fa-brands fa-spotify text-white" style={{ fontSize: '32px' }}></i>
-                        </span>
+                                </span>
+                            </a>
+                            <a href="https://www.linkedin.com/school/polytechnic-university-of-the-philippines/">
+                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-li">
+                                    <i class="fa fa-brands fa-linkedin text-white" style={{ fontSize: '32px' }}></i>
+                                </span>
+                            </a>
+                            <a href="https://www.pup.edu.ph/rss/">
+                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-wf">
+                                    <i class="fa fa-solid fa-rss text-white" style={{ fontSize: '32px' }}></i>
+                                </span>
+                            </a>
+                            <a href="https://open.spotify.com/show/6x7hlv9qZX8VpwMIRAAiRb?si=h7yM8PeXR6qxSjQIs2GveA&dl_branch=1&nd=1">
+                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-sf">
+                                    <i class="fa fa-brands fa-spotify text-white" style={{ fontSize: '32px' }}></i>
+                                </span>
+                            </a>
+                        
                     </div>
                     <p className="text-sm font-bold text-red uppercase pb-0 pt-5">CONTACT US</p>
                     <div className="flex gap-2">
@@ -69,7 +83,7 @@ const Footer = () => {
                     </div>
 
                     <p className="text-sm font-bold text-red uppercase  pt-5">PUPWEBSITE 10</p>
-                    <div className="flex flex-row gap-2">
+                    <div className="flex flex-row gap-2 ">
                         <a className="text-graytext text-textsize hover:underline hover:cursor-pointer">Terms of Use </a>
                         <p className="text-graytext text-textsize hover:underline ">|</p>
                         <a className="text-graytext text-textsize hover:underline hover:cursor-pointer">Privacy Statement</a>
@@ -82,7 +96,7 @@ const Footer = () => {
 
             </div>
             <section />
-            <p class="flex justify-center text-xs text-blackish pb-12 font-normal">© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
+            <p class="flex justify-center copyRight text-xs text-blackish pb-12 font-normal">© 1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
         </>
     )
 }

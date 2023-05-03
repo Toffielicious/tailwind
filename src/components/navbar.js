@@ -33,7 +33,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div class="flex flex-row my-8 " >
+                    <div class="flex flex-row my-8 hideSearch " >
                         <div className='hidden lg:flex searc h-6 rounded-sm' style={{ paddingLeft: '0px' }}>
                             <input placeholder="Type keyword here..." class="inputSearch" />
                             <button disabled className='flex flex-wrap content-center justify-center text-white bg-red hover:cursor-pointer rounded-r-sm h-7 w-7'>
