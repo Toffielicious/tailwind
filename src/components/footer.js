@@ -34,43 +34,44 @@ const Footer = () => {
                         <a href="" className="text-graytext text-textsize select-none hover:underline hover:cursor-pointer">Jobs for PUPians</a>
                     </div>
                 </div>
-                <div className="flex flex-col p-10 gap-3">
+                <div className="flex flex-col m-10 gap-3">
                     <p className="text-sm font-bold text-red uppercase pb-4">KEEP IN TOUCH</p>
-                    <div class="flex flex-row gap-4 icon-col ">
-                        
-                            <a href="https://www.facebook.com/ThePUPOfficial">
+                    <div className="" >
+                        <div class="" >
+                            <a href="https://www.facebook.com/ThePUPOfficial" className="mr-6" >
                                 <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-fb">
                                     <i class="fa fa-brands fa-facebook text-white" style={{ fontSize: '32px' }}></i>
                                 </span>
                             </a>
-                            <a href="https://twitter.com/ThePUPOfficial">
-                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-tt">
+                            <a href="https://twitter.com/ThePUPOfficial" className="mr-6" >
+                                <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-tt " >
                                     <i class="fa fa-brands fa-twitter text-white" style={{ fontSize: '32px' }}></i>
                                 </span>
                             </a>
-                            <a href="https://www.youtube.com/user/pupcreatv">
+                            <a href="https://www.youtube.com/user/pupcreatv" className="mr-6">
                                 <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-yt">
                                     <i class="fa fa-youtube-play text-white" style={{ fontSize: '32px' }}></i>
 
                                 </span>
                             </a>
-                            <a href="https://www.linkedin.com/school/polytechnic-university-of-the-philippines/">
+                            <a href="https://www.linkedin.com/school/polytechnic-university-of-the-philippines/" className="mr-6">
                                 <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-li">
                                     <i class="fa fa-brands fa-linkedin text-white" style={{ fontSize: '32px' }}></i>
                                 </span>
                             </a>
-                            <a href="https://www.pup.edu.ph/rss/">
+                            <a href="https://www.pup.edu.ph/rss/" className="mr-6 ">
                                 <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-wf">
                                     <i class="fa fa-solid fa-rss text-white" style={{ fontSize: '32px' }}></i>
                                 </span>
                             </a>
-                            <a href="https://open.spotify.com/show/6x7hlv9qZX8VpwMIRAAiRb?si=h7yM8PeXR6qxSjQIs2GveA&dl_branch=1&nd=1">
+                            <a href="https://open.spotify.com/show/6x7hlv9qZX8VpwMIRAAiRb?si=h7yM8PeXR6qxSjQIs2GveA&dl_branch=1&nd=1" className="mr-6">
                                 <span class="inline-flex items-center hover:cursor-pointer justify-center h-12 w-12 rounded-full bg-red hover:bg-sf">
                                     <i class="fa fa-brands fa-spotify text-white" style={{ fontSize: '32px' }}></i>
                                 </span>
                             </a>
-                        
+                        </div>
                     </div>
+
                     <p className="text-sm font-bold text-red uppercase pb-0 pt-5">CONTACT US</p>
                     <div className="flex gap-2">
                         <p className="text-graytext text-textsize">Phone:</p>

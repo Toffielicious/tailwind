@@ -8,7 +8,7 @@ const Navbar = () => {
             <div class="mx-auto px-2 sm:px-4 md:px-6 end-btn lg:px-8" style={{
                 lineHeight: "23px", fontWeight: 300, backgroundImage: "url(bg.jpg)", backgroundRepeat: "no-repeat", backgroundPosition: "center center", backgroundSize: "cover",
             }}>
-                <div className="xl:px-64 flex flex-row end-btn2 justify-between">
+                <div className="2xl:px-64 flex flex-row end-btn2 justify-between">
 
                     <div>
                         <div className="flex flex-row">
@@ -23,7 +23,7 @@ const Navbar = () => {
                                     </a>
                                 </div>
 
-                                <ul className="hidden lg:flex lg:flex-row lg:gap-11 pt-4 text-red font-bold">
+                                <ul className="hidden  md:flex md:flex-row md:gap-11 pt-4 text-red font-bold">
                                     <li><a href="#">About PUP</a></li>
                                     <li><a href="#">Academic</a></li>
                                     <li><a href="#">Students</a></li>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </div>
 
                     <div class="flex flex-row my-8 hideSearch " >
-                        <div className='hidden lg:flex searc h-6 rounded-sm' style={{ paddingLeft: '0px' }}>
+                        <div className='hidden md:flex searc h-6 rounded-sm' style={{ paddingLeft: '0px' }}>
                             <input placeholder="Type keyword here..." class="inputSearch" />
                             <button disabled className='flex flex-wrap content-center justify-center text-white bg-red hover:cursor-pointer rounded-r-sm h-7 w-7'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -45,7 +45,7 @@ const Navbar = () => {
                         
                     </div>
                 </div>
-                <button class="lg:hidden bg-red text-white font-bold  px-4 rounded" id="menu-button">Menu</button>
+                <button class="hidden bg-red text-white font-bold  px-4 rounded" id="menu-button">Menu</button>
 
             </div>
         </nav>

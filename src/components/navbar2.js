@@ -1,9 +1,9 @@
 
 
-function Navigation() {
+function Nav2() {
   return (
     <nav
-      className="flex flex-wrap items-center justify-between m-0 text-lg font-noto  text-gray-500 bg-white bg-center bg-cover backdrop-contrast-200 sm:text-xl "
+      className="flex flex-wrap items-center justify-between m-0 text-lg font-noto  text-gray-500 bg-white bg-center bg-cover  sm:text-xl "
       style={{ lineHeight: "23px", fontWeight: 300, backgroundImage: "url(bg.jpg)", vbackgroundRepeat: "no-repeat", backgroundPosition: "top ", backgroundSize: "cover", }}
     >
       <div className="px-10 mx-auto col-md-12 ">
@@ -69,9 +69,6 @@ function Navigation() {
       </div> */}
 
 
-
-
-
       {/* <div className="col-md-12">
               <ul className="flex flex-row social-list ">
                 <div>
@@ -122,4 +119,4 @@ function Navigation() {
     </nav>
   );
 }
-export default Navigation;
+export default Nav2;

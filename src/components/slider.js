@@ -45,7 +45,7 @@ const Slider = () =>{
       const [hovered, setHovered] = useState(false);
 
       return (
-        <div className='show' style={{ position: 'relative' }} onMouseEnter={() => setHovered(true)}  onMouseLeave={() => setHovered(false)}>
+        <div className='show' style={{ position: '' }} onMouseEnter={() => setHovered(true)}  onMouseLeave={() => setHovered(false)}>
         <Carousel showIndicators={hovered} className='' interval={5000} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay selectedItem={slide} onChange={(index) => setSlide(index)} showArrows={false}>
             
             <img src="b1.jpg" alt="Image 1" />

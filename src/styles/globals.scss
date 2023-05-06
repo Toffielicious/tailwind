@@ -65,6 +65,29 @@ input::placeholder {
 
 }
 
+@media only screen and (max-width: 1024) {
+  .changeBg {
+    background-color: rgb(102, 22, 22);
+    background-image: none;
+  }
+
+  .twit{
+    width: 100%
+  }
+}
+
+.burgerMenu {
+  border: solid 1px white;
+  
+}
+
+.changeBg {
+  background-image: url(/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 @media screen and (min-width:'280px') and (max-width:'640px') {
 
   .updatesSec {
@@ -78,13 +101,12 @@ input::placeholder {
   //   width: 100%;
   // }
 
-  // .announcements{
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   flex-direction: column;
-  //   width: '100%'
-  // }
+  .announcements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
 }
 
@@ -102,17 +124,14 @@ input::placeholder {
 
 @media only screen and (max-width:1024px) {
 
-  .carouselPics {
-    width: 100%;
-  
-  }
+
 
   .mw {
     width: 100%;
-  
+
   }
 
-  
+
 
 }
 
@@ -157,9 +176,7 @@ input::placeholder {
     width: 100%;
   }
 
-  .carouselPics {
-    width: 800px;
-  }
+
 
   .iconResponsive {
     width: 100%;
@@ -169,26 +186,29 @@ input::placeholder {
     width: 100%;
   }
 
-  .youtube-spotMargin{
-    
+  .youtube-spotMargin {
+
     margin-left: 1rem;
     margin-right: 1rem;
-    
-  }
 
-  .spotify {
-    width: 100%;
-    
   }
 
   .youtube {
     width: 100%;
-    
+
+  }
+
+  .twit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
 
 
 }
+
+
 
 // @media only screen and (min-width:'640px') {
 //   .icon-spacing span{
@@ -211,7 +231,7 @@ input::placeholder {
   width: 350px;
 }
 
-@media only screen and (min-width: 640px) and (max-width: 768px){
+@media only screen and (min-width: 640px) and (max-width: 768px) {
 
   // .youtube{
   //   width: 500px;
@@ -236,29 +256,29 @@ input::placeholder {
     width: 100%;
   }
 
-  .picsMargin{
+  .picsMargin {
 
     margin-left: 1rem;
     margin-right: 1rem;
 
   }
 
-  .pics{
+  .pics {
     width: 100%;
   }
 
-  .youtube-spotMargin{
-    
+  .youtube-spotMargin {
+
     margin-left: 1rem;
     margin-right: 1rem;
-    
+
   }
 
 
 
 }
 
-@media only screen and (min-width:1024px) and (max-width: 1280px){
+@media only screen and (min-width:1024px) and (max-width: 1280px) {
   // .embedResponsive {
   //   display: flex;
   //   flex-direction: column;
@@ -279,20 +299,20 @@ input::placeholder {
     margin-bottom: 20px;
   }
 
-  .wid30{
+  .wid30 {
     max-width: 30%;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .spotify {
     width: 100%;
-    
+
   }
 
   .youtube {
     width: 100%;
-    
+
   }
 
   .embed-links {
@@ -300,7 +320,8 @@ input::placeholder {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-  } 
+  }
+
   .embedResponsive {
     display: flex;
     flex-direction: column;
@@ -314,38 +335,38 @@ input::placeholder {
 
   }
 
-  .pics{
+  .pics {
     width: 100%;
-    
+
   }
 
-  .sliderMargin{
+  .sliderMargin {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .picsMargin{
+  .picsMargin {
 
     margin-left: 1rem;
     margin-right: 1rem;
 
   }
 
-  .youtube-spotMargin{
-    
+  .youtube-spotMargin {
+
     margin-left: 1rem;
     margin-right: 1rem;
-    
+
   }
 
-  
+
 }
 
 
 
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
 
-  
+
   .spotify {
     width: 100%;
   }
@@ -354,7 +375,7 @@ input::placeholder {
     width: 100%;
     margin-right: 1rem;
     margin-left: 1rem;
-    
+
   }
 
   .embed-links {
@@ -364,14 +385,14 @@ input::placeholder {
     width: 100%;
   }
 
-  .sliderMargin{
+  .sliderMargin {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
 
-  
-  
+
+
 }
 
 
@@ -403,18 +424,35 @@ input::placeholder {
     width: 100%;
   }
 
-  .media-links{
+  .media-links {
     display: flex;
     flex-direction: column;
     width: 100%;
 
   }
 
-  .hideLine{
+  .hideLine {
     display: none;
   }
 
+  .spotify {
+    width: 100%;
+  }
+
+  .youtube {
+    width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+  } 
+
+.twit{
+  width: 100%;
+}
+
   
+
+
 }
 
 @media only screen and (min-width: 1024px) and (max-width:1280) {
@@ -443,7 +481,8 @@ input::placeholder {
 @media only screen and (min-width: 280px) and (max-width:640px) {
   .twit {
     overflow-x: auto;
-    height: 820px !important
+    height: 820px !important;
+    width: 100%
   }
 
   .twitter-timeline {
@@ -457,7 +496,6 @@ input::placeholder {
 
   .youtube {
     width: 100%
-    
   }
 
   .embedResponsive {
@@ -473,25 +511,27 @@ input::placeholder {
     text-align: center;
   }
 
-  .icon-col{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-  }
+  // .icon-row {
+    
+   
+  // }
 
-  .icon-spacing{
+  .icon-spacing {
     display: flex;
     flex-direction: row;
     gap: 20px;
 
   }
 
+  .minimizeText a {
+    font-size: 10px;
+  }
+
 }
 
-@media only screen and (min-width: 640px) and (max-width:768px) {
-  
-}
+
+
+@media only screen and (min-width: 640px) and (max-width:768px) {}
 
 
 @media screen and (min-width: 280px) {
@@ -512,77 +552,76 @@ input::placeholder {
 }
 
 
+// @media only screen and (min-width: 280px) and (max-width: 480px) {
+//   .navbarResponsive {
+//     font-size: 12px;
+//     height: 60px;
+//   }
 
-@media only screen and (min-width: 280px) and (max-width: 480px) {
-  .navbarResponsive {
-    font-size: 12px;
-    height: 60px;
-  }
+//   .navbarResponsive .menu {
+//     padding-top: 0;
+//     text-align: center;
+//   }
 
-  .navbarResponsive .menu {
-    padding-top: 0;
-    text-align: center;
-  }
+//   .navbarResponsive .menu a {
+//     margin-bottom: 10px;
+//   }
 
-  .navbarResponsive .menu a {
-    margin-bottom: 10px;
-  }
+//   .navbarResponsive .menu ul {
+//     display: none;
+//   }
 
-  .navbarResponsive .menu ul {
-    display: none;
-  }
+//   .navbarResponsive .menu .navbarMenu {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
 
-  .navbarResponsive .menu .navbarMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+//   .navbarResponsive .menu .navbarMenu a {
+//     font-size: 16px;
+//   }
 
-  .navbarResponsive .menu .navbarMenu a {
-    font-size: 16px;
-  }
+//   .navbarResponsive .menu .navbarMenu a:first-child {
+//     margin-bottom: 5px;
+//   }
 
-  .navbarResponsive .menu .navbarMenu a:first-child {
-    margin-bottom: 5px;
-  }
+//   .navbarResponsive .menu .navbarMenu a:last-child {
+//     margin-top: 5px;
+//   }
 
-  .navbarResponsive .menu .navbarMenu a:last-child {
-    margin-top: 5px;
-  }
+//   .navbarResponsive .menu .inputSearch {
+//     width: 70%;
+//     font-size: 12px;
+//     padding: 6px 8px;
+//     margin-right: 5px;
+//   }
 
-  .navbarResponsive .menu .inputSearch {
-    width: 70%;
-    font-size: 12px;
-    padding: 6px 8px;
-    margin-right: 5px;
-  }
+//   .navbarResponsive .menu .inputSearch:focus {
+//     outline: none;
+//   }
 
-  .navbarResponsive .menu .inputSearch:focus {
-    outline: none;
-  }
+//   .navbarResponsive .menu .inputSearch::placeholder {
+//     font-size: 12px;
+//   }
 
-  .navbarResponsive .menu .inputSearch::placeholder {
-    font-size: 12px;
-  }
-
-  .navbarResponsive .menu .navbarMenu svg {
-    width: 12px;
-    height: 12px;
-  }
-
-  
-}
+//   .navbarResponsive .menu .navbarMenu svg {
+//     width: 12px;
+//     height: 12px;
+//   }
 
 
+// }
 
-@media (min-width: 280px) and (max-width: 765px) {
+
+
+@media (min-width: 280px) and (max-width: 768px) {
   .navbarMenu {
     display: none;
   }
 }
 
 
-@media (min-width: 280px) and (max-width: 1239px) {
+@media (min-width: 280px) and (max-width: 768px) {
   .hide {
     display: none;
   }
@@ -604,10 +643,16 @@ input::placeholder {
   font-size: 36px;
 }
 
-@media (min-width: 280px) and (max-width: 765px) {
+@media (min-width: 280px) and (max-width: 768px) {
   .center {
     justify-content: center;
     align-items: center;
+  }
+
+  .iconSpacing {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
   }
 }
 
@@ -638,10 +683,7 @@ input::placeholder {
   border-color: #888888;
 }
 
-// #default-carousel{
 
-//   max-width: 100%
-// }
 hr {
   border: none;
   height: 1px;
@@ -686,7 +728,7 @@ hr {
   }
 }
 
-.iconSpacing{
+.iconSpacing {
   width: 100%;
 }
 
@@ -739,12 +781,12 @@ a:hover h4 {
   transform: translateY(-50%);
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 768px) {
   .menu {
     display: none;
   }
 
-  .hideSearch{
+  .hideSearch {
     display: none;
   }
 
@@ -854,7 +896,7 @@ a:hover h4 {
 }
 
 // .adminToggle {
-  
+
 //   position: absolute;
 //   border-radius: 50%;
 //   top: 0;
@@ -898,11 +940,144 @@ a:hover h4 {
 
 .adminActions {
   position: fixed;
-  bottom: 130px; right: 35px;
+  bottom: 130px;
+  right: 35px;
 }
 
 .adminActions2 {
   position: fixed;
-  bottom: 55px; right: 35px;
+  bottom: 55px;
+  right: 35px;
 }
 
+.body-margin {
+  max-width: 90%;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px) saturate(168%);
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  flex-wrap: wrap;
+  left: 0;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff url(https://www.pup.edu.ph/resources/images/photos/bg1.jpg);
+  background-size: cover;
+  position: fixed;
+  width: 900px;
+  height: 600px;
+  left: 50%;
+  top: 330px;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  animation: float-in .5s forwards;
+  padding: 10px;
+}
+
+.btnCancel {
+  border: none;
+  display: flex;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  transform: rotate(45deg);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: #000;
+  opacity: .2;
+}
+
+.btnCancel:hover {
+  opacity: .5;
+}
+
+.modal-content p {
+  color: #666;
+}
+
+.modal-items-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  padding: 0 15px 0 15px;
+}
+
+.modal-links-container {
+  transition: .2s;
+}
+
+.modal-links-container p {
+  color: #fff;
+}
+
+@keyframes float-in {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -150%) scale(1);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes float-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -150%) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -150%) scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .modal-content {
+    width: 100%;
+    height: auto;
+    top: 840px;
+  }
+
+  .btnCancel {
+    font-size: 48px;
+  }
+
+  .logo-container img {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  .logos-container {
+    transform: scale(1.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .modal-items-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
