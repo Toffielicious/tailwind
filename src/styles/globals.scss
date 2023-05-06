@@ -71,14 +71,12 @@ input::placeholder {
     background-image: none;
   }
 
-  .twit{
-    width: 100%
-  }
+
 }
 
 .burgerMenu {
   border: solid 1px white;
-  
+
 }
 
 .changeBg {
@@ -129,6 +127,24 @@ input::placeholder {
   .mw {
     width: 100%;
 
+  }
+
+  .twit {
+    overflow-x: auto;
+    height: 820px !important;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .twitter-timeline {
+    width: 100% !important;
+    height: 820px;
+
+  }
+
+  .twitty {
+    width: 100%;
   }
 
 
@@ -198,11 +214,11 @@ input::placeholder {
 
   }
 
-  .twit{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+  // .twit{
+  //   display: flex;
+  //   justify-content: center;
+  //   width: 100%;
+  // }
 
 
 
@@ -279,21 +295,22 @@ input::placeholder {
 }
 
 @media only screen and (min-width:1024px) and (max-width: 1280px) {
-  // .embedResponsive {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   // align-items: center;
-  //   margin: 0;
-  //   margin-left: 0;
-  //   margin-right: 0;
-  //   margin-bottom: 20px;
-  //   width: 100%;
+  .embedResponsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
 
-  // }
+  }
+
   .embed-links {
     margin: 0;
-    margin-left: 10px;
+    margin-left: 0;
     margin-right: 0;
     width: 100%;
     margin-bottom: 20px;
@@ -302,6 +319,41 @@ input::placeholder {
   .wid30 {
     max-width: 30%;
   }
+
+  .youtube {
+    width: 100%;
+   
+    margin-right: 1rem;
+  }
+
+  .spotify {
+    width: 100%;
+  
+    margin-right: 1rem;
+  }
+
+  .youtube-spotMargin {
+
+    margin-right: 1rem;
+    width: 100%;
+
+  }
+
+  .twit {
+    overflow-x: auto;
+    height: 820px !important;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .twitter-timeline {
+    width: 100% !important;
+    height: 820px;
+
+  }
+
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -326,7 +378,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     margin: 0;
     margin-left: 0;
     margin-right: 0;
@@ -444,13 +496,13 @@ input::placeholder {
     margin-right: 1rem;
     margin-left: 1rem;
 
-  } 
+  }
 
-.twit{
-  width: 100%;
-}
+  .twit {
+    width: 100%;
+  }
 
-  
+
 
 
 }
@@ -482,12 +534,15 @@ input::placeholder {
   .twit {
     overflow-x: auto;
     height: 820px !important;
-    width: 100%
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .twitter-timeline {
-    width: 400px !important;
+    width: 100% !important;
     height: 820px;
+
   }
 
   .spotify {
@@ -512,8 +567,8 @@ input::placeholder {
   }
 
   // .icon-row {
-    
-   
+
+
   // }
 
   .icon-spacing {
@@ -547,6 +602,8 @@ input::placeholder {
     padding-right: 24px;
 
   }
+
+
 
 
 }

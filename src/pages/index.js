@@ -17,7 +17,7 @@ export default function home() {
 
   // const [slidePics, setSlide] = useState(0);
 
-  
+
 
   const slides = [
     {
@@ -69,9 +69,11 @@ export default function home() {
         <Navbar2 />
 
       </section>
+
+      <Slide />
       <section class="bg-gray ">
 
-        <Slide />
+
 
       </section>
 
@@ -153,7 +155,7 @@ export default function home() {
               <div className="mw">
 
                 <div className='sliderMargin'>
-                {/* <Carousel showIndicators={false} className='' interval={5000} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay selectedItem={slidePics} onChange={(index) => setSlide(index)} showArrows={false}> */}
+                  {/* <Carousel showIndicators={false} className='' interval={5000} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay selectedItem={slidePics} onChange={(index) => setSlide(index)} showArrows={false}> */}
                   <Carousel showIndicators={false} className='' interval={5000} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay showArrows={false}>
                     <div className=''>
                       <img src="https://i.ibb.co/BV3VPxr/2023-04-26-phivolcs-commits-to-training-pup-on-redas.jpg" className='carouselPics object-cover ' style={{ height: '480px' }} alt="" />
@@ -270,22 +272,25 @@ export default function home() {
 
 
       <section class="flex flex-col space-y-4 embed-links sm:w-full items-center justify-center my-6 " style={{ marginBottom: '-55px' }}>
-        <div className='flex flex-row embedResponsive sm:flex-col md:flex-col lg:flex-row '>
-          <div className="flex flex-wrap justify-center mt-10 twitty border-grey">
-            <div className="flex justify-center w-full h-auto ">
-              <div className="twit">
-                <a class="twitter-timeline " data-height="820" data-theme="dark" href="https://twitter.com/ThePUPOfficial?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       
+          <div className='flex flex-row embedResponsive  items-center justify-center sm:flex-col md:flex-col lg:flex-row '>
+            <div className="flex flex-wrap justify-center twitty lg:mb-6 border-grey">
+              <div className="flex justify-center w-full h-auto ">
+                <div className="twit">
+                  <a class="twitter-timeline" data-height="820" data-theme="dark" href="https://twitter.com/ThePUPOfficial?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="flex flex-col w-full xl:mb-6 xl:mt-6 xl:m-6 pt-6 ">
+              <div className='youtube-spotMargin  flex flex-col space-y-4 items-center justify-center '>
+                <iframe class="youtube" data-height="350" src="https://www.youtube.com/embed/EVp6JBwTudk?list=UU3D3_jrSi3sYmx5L5p5RAwA" title="The Observer Online: Tanglaw Fest 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="spotify md:mb-5" data-height="350" style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/6hSNhWq3gSGcSouucc8kl0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
             </div>
           </div>
-
-          <div class="flex flex-col w-full lg:m-6 pt-4">
-            <div className='youtube-spotMargin flex flex-col space-y-4 items-center justify-center '>
-              <iframe class="youtube" data-height="350" src="https://www.youtube.com/embed/EVp6JBwTudk?list=UU3D3_jrSi3sYmx5L5p5RAwA" title="The Observer Online: Tanglaw Fest 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <iframe class="spotify md:mb-5" data-height="350" style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/6hSNhWq3gSGcSouucc8kl0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
+       
       </section>
 
       <section class='bg-gray'>
