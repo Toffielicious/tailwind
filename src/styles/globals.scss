@@ -75,7 +75,7 @@ input::placeholder {
 }
 
 .burgerMenu {
-  border: solid 1px white;
+  border: solid 2px white;
 
 }
 
@@ -141,6 +141,7 @@ input::placeholder {
     width: 100% !important;
     height: 820px;
 
+
   }
 
   .twitty {
@@ -192,8 +193,6 @@ input::placeholder {
     width: 100%;
   }
 
-
-
   .iconResponsive {
     width: 100%;
   }
@@ -206,31 +205,12 @@ input::placeholder {
 
     margin-left: 1rem;
     margin-right: 1rem;
-
   }
 
   .youtube {
     width: 100%;
-
   }
-
-  // .twit{
-  //   display: flex;
-  //   justify-content: center;
-  //   width: 100%;
-  // }
-
-
-
 }
-
-
-
-// @media only screen and (min-width:'640px') {
-//   .icon-spacing span{
-//     gap:2;
-//   }
-// }
 
 .youtube {
   width: 750px;
@@ -293,6 +273,7 @@ input::placeholder {
 
 
 }
+
 
 @media only screen and (min-width:1024px) and (max-width: 1280px) {
   .embedResponsive {
@@ -678,6 +659,7 @@ input::placeholder {
 }
 
 
+
 @media (min-width: 280px) and (max-width: 768px) {
   .hide {
     display: none;
@@ -686,6 +668,8 @@ input::placeholder {
   .end-btn {
     display: flex;
     justify-content: space-between;
+    background-color: #880000;
+   
   }
 
   .end-btn2 {
@@ -698,6 +682,15 @@ input::placeholder {
 
 .he2 {
   font-size: 36px;
+}
+
+@media only screen and (min-width:'768px') {
+
+  .end-btn{
+    background-image: url(/bg.jpg);
+  }
+  
+  
 }
 
 @media (min-width: 280px) and (max-width: 768px) {
@@ -830,6 +823,13 @@ a:hover h4 {
   border-bottom: 1px solid #800;
 }
 
+@media only screen and (max-width: 640px){
+  .pupLogo{
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+
 
 
 .btn {
@@ -848,8 +848,14 @@ a:hover h4 {
   }
 
   #menu-button {
-    display: block;
+    display: flex;
+    // margin: 1rem;
+    justify-content: center;
+    align-items: center;
   }
+
+
+  
 }
 
 .adminButton {

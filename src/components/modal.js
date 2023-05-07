@@ -58,7 +58,7 @@ const Modal = () =>{
       }, []);
       
     return(
-        <div className="bg-modal">
+        <div className="bg-modal z-10">
                 <div className="modal-content">
                     <div className="w-full pt-2">
                         <button className="btnCancel">+</button>

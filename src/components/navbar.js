@@ -5,14 +5,12 @@ const Navbar = () => {
 
     return (
         <nav class="bg-white-800 navbarResponsive ">
-            <div class="mx-auto px-2 sm:px-4 md:px-6 end-btn lg:px-8" style={{
-                lineHeight: "23px", fontWeight: 300, backgroundImage: "url(bg.jpg)", backgroundRepeat: "no-repeat", backgroundPosition: "center center", backgroundSize: "cover",
-            }}>
+            <div class="mx-auto px-2 sm:px-4 md:px-6 end-btn lg:px-8 " style={{ lineHeight: "23px", fontWeight: 300 , backgroundRepeat: "no-repeat", backgroundPosition: "center center", backgroundSize: "cover", }}>
                 <div className="2xl:px-64 flex flex-row end-btn2 justify-between">
 
                     <div>
-                        <div className="flex flex-row">
-                            <img src="PUPLogo.png" class="max-w-[90px] max-h-[90px]" />
+                        <div className="flex flex-row ">
+                            <img src="PUPLogo.png" class="md:max-w-[90px] md:max-h-[90px] sm:max-w-[60px] sm:max-h-[60px] pupLogo" />
                             <div class="flex flex-col menu font-sanscinzel pt-4">
                                 <div class="navbarMenu hide">
                                     <a href="#" class="text-red text-sm font-bold flex flex-row gap-2 hover:underline" style={{ fontSize: '18px' }} >
@@ -42,11 +40,12 @@ const Navbar = () => {
                                 </svg>
                             </button>
                         </div>
-                        
+
                     </div>
                 </div>
-                <button class="hidden bg-red text-white font-bold  px-4 rounded" id="menu-button">Menu</button>
-
+                <button class="hidden  text-white font-bold rounded" id="menu-button">
+                    <i class="fa fa-solid fa-bars text-white px-2 py-2 bg-red burgerMenu" style={{fontSize:"24px"}}></i>
+                </button>
             </div>
         </nav>
 
