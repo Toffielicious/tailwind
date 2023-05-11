@@ -15,7 +15,7 @@ function Nav2() {
               </a>
             </li>
             <li className="pt-1">
-              <a href="#" className=" font-normal center hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer px-4 lg:px-4 py-3" >Home</a>
+              <Link href="/" className=" font-normal center hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer px-4 lg:px-4 py-3" >Home</Link>
             </li>
             <li className="pt-1 hide ">
 

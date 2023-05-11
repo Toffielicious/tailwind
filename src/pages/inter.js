@@ -7,6 +7,7 @@ import Footer2 from '@components/footer2.js'
 import Fab from 'src/components/FAB.js'
 import Modal from 'src/components/modal.js'
 import axios from 'axios'
+import Modal2 from 'src/components/modal2.js'
 
 const International = ({ articlesData }) => {
     console.log(articlesData);
@@ -103,7 +104,7 @@ const International = ({ articlesData }) => {
                 <Footer2 />
             </section>
             <Fab />
-            <Modal />
+            <Modal2 />
 
 
         </>

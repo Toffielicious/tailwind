@@ -3,7 +3,7 @@ import Footer from '@components/footer.js'
 import Navbar2 from '@/components/navbar'
 import Footer2 from '@components/footer2.js'
 import Fab from 'src/components/FAB.js'
-import Modal from 'src/components/modal.js'
+import Modal2 from 'src/components/modal2.js'
 
 
 export default function contact() {
@@ -122,7 +122,7 @@ export default function contact() {
         <>
             <Navbar />
             <Navbar2 />
-            <Modal />
+            <Modal2 />
 
             <div className="px-4 py-12 container-body">
                 <div className="flex flex-col lg:flex-row">
