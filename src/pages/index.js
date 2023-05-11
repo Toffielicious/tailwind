@@ -13,53 +13,72 @@ import Modal from '@/components/modal'
 
 
 
-export default function home() {
-
-  // const [slidePics, setSlide] = useState(0);
+export default function Home() {
 
 
+  const [slideIndex, setSlideIndex] = useState(0);
 
-  const slides = [
+  const handlePrevClick = () => {
+    setSlideIndex((slideIndex - 1 + midSlider.length) % midSlider.length);
+  };
+
+  const handleNextClick = () => {
+    setSlideIndex((slideIndex + 1) % midSlider.length);
+  };
+
+
+  const midSlider = [
     {
-      src: 'https://i.ibb.co/BV3VPxr/2023-04-26-phivolcs-commits-to-training-pup-on-redas.jpg'
+      src: 'https://i.ibb.co/BV3VPxr/2023-04-26-phivolcs-commits-to-training-pup-on-redas.jpg',
+      text: 'PHIVOLCS commits to training PUP on REDAS',
+      date: 'April 26, 2023'
     },
     {
-      src: 'https://i.ibb.co/VxB17QQ/2023-04-26-earth-day-2023-celebrated-through-the-arts-1.jpg'
+      src: 'https://i.ibb.co/VxB17QQ/2023-04-26-earth-day-2023-celebrated-through-the-arts-1.jpg',
+      text: 'Earth Day 2023 celebrated through the arts',
+      date: 'April 26, 2023'
     },
     {
-      src: 'https://www.pup.edu.ph/resources/images/fillers/3.jpg'
+      src: 'https://www.pup.edu.ph/resources/images/fillers/3.jpg',
+      text: 'DBM Sec. Pangandaman and DepEd Usec Jumamil-Mercado receives Tanglaw ng Bayan Award',
+      date: 'April 25, 2023'
     },
     {
-      src: 'https://www.pup.edu.ph/resources/images/fillers/4.jpg'
+      src: 'https://www.pup.edu.ph/resources/images/fillers/4.jpg',
+      text: '#GetThatBar2022: PUP Law retains top performance',
+      date: 'April 25, 2023'
     },
     {
-      src: 'https://www.pup.edu.ph/resources/images/fillers/5.jpg'
+      src: 'https://www.pup.edu.ph/resources/images/fillers/5.jpg',
+      text: 'CSSD works with various stakeholders for history and cultural heritage promotion',
+      date: 'April 25, 2023'
     },
     {
-      src: 'https://www.pup.edu.ph/resources/images/fillers/6.jpg'
+      src: 'https://www.pup.edu.ph/resources/images/fillers/6.jpg',
+      text: 'Philhealth employees nationwide take Civil Service Review with ICPD',
+      date: 'April 20, 2023'
     },
     {
-      src: 'https://www.pup.edu.ph/resources/images/fillers/7.jpg'
+      src: 'https://www.pup.edu.ph/resources/images/fillers/7.jpg',
+      text: 'PUP partners with 350 Pilipinas on "Climate Deals',
+      date: 'April 20, 2023'
     },
     {
-      src: 'https://i.ibb.co/84sW6Fy/2023-04-13-cssd-officially-becomes-an-associate-member-of-the-pssc.jpg'
+      src: 'https://i.ibb.co/84sW6Fy/2023-04-13-cssd-officially-becomes-an-associate-member-of-the-pssc.jpg',
+      text: 'CSSD officially becomes an associate member of the PSSC',
+      date: 'April 12, 2023'
     },
     {
-      src: 'https://i.ibb.co/dbPj8ff/2023-04-04-sen-risa-graces-emos-f2f-gender-sensitivity-training-sen-hontiveros.jpg'
+      src: 'https://i.ibb.co/84sW6Fy/2023-04-13-cssd-officially-becomes-an-associate-member-of-the-pssc.jpg',
+      text: "Sen. Risa graces EMO's F2F gender sensitivity training",
+      date: 'April 04, 2023'
     },
     {
-      src: 'https://i.ibb.co/CWK75gC/2023-04-03-cssd-formally-partners-with-abo-akademi-university.jpg'
+      src: 'https://i.ibb.co/CWK75gC/2023-04-03-cssd-formally-partners-with-abo-akademi-university.jpg',
+      text: 'CSSD formally partners with Abo Akademi University',
+      date: 'April 03, 2023'
     },
   ]
-
-  // function clickPrev  ()  {
-  //   setSlide((slidePics - 1 + slides.length) % slides.length);
-  // };
-
-  // function clickNext  ()  {
-  //   setSlide((slidePics + 1) % slides.length);
-  // };
-
 
   return (
     <>
@@ -72,8 +91,6 @@ export default function home() {
 
       <Slide />
       <section class="bg-gray ">
-
-
 
       </section>
 
@@ -94,7 +111,7 @@ export default function home() {
                     <p className='text-l hideLine'>___________________</p>
                   </div>
                 </div>
-                <div className="flex flex-wrap overflow-auto   " style={{ height: "600px" }}>
+                <div className="flex flex-wrap overflow-auto" style={{ height: "600px" }}>
                   <div className=" py-4 text-red">
                     <a href="#" className='hover:underline ' >Administrative Applicants for Selection/Promotion: List of All Applicants (First and Second Level) April 2023</a>
                     <p className="text-blackish pt-2">Posted: April 20, 2023</p>
@@ -128,121 +145,44 @@ export default function home() {
             </div>
 
 
-
-            <div className='flex flex-col mw '>
-              <div class="flex flex-row justify-between sliderMargin">
-                <a className=" font-bold  m-0 text-red hover:cursor-pointer">Latest News from the University</a>
-                <div className='flex-row gap-1'>
-
-                  <div class="flex gap-1">
-                    <button className='border bc rounded-sm items-center hover:bg-red hover:text-white' onclick>
-                      <i class="fa fa-sharp fa-solid fa-chevron-left px-1  text-grayest" style={{ fontSize: '12px' }}></i>
-                    </button>
-                    <button className='border bc rounded-sm items-center hover:bg-red' onclick>
-                      <i class="fa fa-sharp fa-solid fa-chevron-right px-1  text-grayest" style={{ fontSize: '12px' }}></i>
-                    </button>
+            <div className=" mw ">
+              <div className="justify-between flex sliderMargin">
+                <h1 className="mb-2 font-bold text-red">Latest News from the University</h1>
+                
+                <div className="">
+                  <div className='flex gap-1'>
+                  <button onClick={handlePrevClick} className="border sliderBtn px-1.5 text-grayest py-1.5 bc rounded-sm items-center hover:bg-red hover:text-white">
+                  <i class="fa fa-sharp fa-solid fa-chevron-left px-1  text-grayest" style={{ fontSize: '10px' }}></i>
+                  </button>
+                  <button onClick={handleNextClick} className="border sliderBtn px-1.5 py-1.5 text-grayest rounded-sm items-center hover:bg-red hover:text-white">
+                  <i class="fa fa-sharp fa-solid fa-chevron-right px-1 text-grayest" style={{ fontSize: '10px' }}></i>
+                  </button>
                   </div>
                 </div>
               </div>
-
               <div className='flex flex-row pb-4 sliderMargin'>
                 <div class=" flex flex-row">
                   <p className=' flex text-red justify-center items-center'>____________________________________</p>
                   <p className='text-l hideLine'>________________________</p>
                 </div>
               </div>
-
-              <div className="mw">
-
-                <div className='sliderMargin'>
-                  {/* <Carousel showIndicators={false} className='' interval={5000} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay selectedItem={slidePics} onChange={(index) => setSlide(index)} showArrows={false}> */}
-                  <Carousel showIndicators={false} className='' interval={5000} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay showArrows={false}>
-                    <div className=''>
-                      <img src="https://i.ibb.co/BV3VPxr/2023-04-26-phivolcs-commits-to-training-pup-on-redas.jpg" className='carouselPics object-cover ' style={{ height: '480px' }} alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>PHIVOLCS commits to training PUP on REDAS</a>
-                        <p className='pt-2'>April 26, 2023</p>
+              <div className=" sliderMargin">
+                <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} selectedItem={slideIndex} onChange={(index) => setSlideIndex(index)} showIndicators={false} showArrows={false}>
+                  {midSlider.map((midslide, index) => (
+                    <div key="" className="flex flex-col flex-wrap ">
+                      <div key={index}>
+                        <img src={midslide.src} alt={`Image ${index}`} className="object-cover " style={{height: '480px'}} />
+                      </div>
+                      <div className="flex flex-col pt-5">
+                        <a href="" className="h-auto font-semibold text-left text-red hover:underline">{midslide.text}</a>
+                        <p className="text-left">{midslide.date}</p>
                       </div>
                     </div>
-
-                    <div>
-                      <img src="https://i.ibb.co/VxB17QQ/2023-04-26-earth-day-2023-celebrated-through-the-arts-1.jpg" className=' carouselPics object-cover' style={{ height: '480px' }} alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>Earth Day 2023 celebrated through the arts</a>
-                        <p className='pt-2'>April 26, 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://www.pup.edu.ph/resources/images/fillers/3.jpg" style={{ height: '480px' }} className='carouselPics object-cover' alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>DBM Sec. Pangandaman and DepEd Usec Jumamil-Mercado receives Tanglaw ng Bayan Award
-                        </a>
-                        <p className='pt-2'>April 25, 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://www.pup.edu.ph/resources/images/fillers/4.jpg" style={{ height: '480px' }} className='carouselPics object-cover' alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>#GetThatBar2022: PUP Law retains top performance</a>
-                        <p className='pt-2'>April 25, 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://www.pup.edu.ph/resources/images/fillers/5.jpg" style={{ height: '480px' }} className=' carouselPics object-cover' alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>CSSD works with various stakeholders for history and cultural heritage promotion
-                        </a>
-                        <p className='pt-2'>April 25, 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://www.pup.edu.ph/resources/images/fillers/6.jpg" style={{ height: '480px' }} className='carouselPics object-cover' alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>Philhealth employees nationwide take Civil Service Review with ICPD</a>
-                        <p className='pt-2'>April 20, 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://www.pup.edu.ph/resources/images/fillers/7.jpg" style={{ height: '480px' }} className='carouselPics object-cover' alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>PUP partners with 350 Pilipinas on "Climate Deals"</a>
-                        <p className='pt-2'>April 20  , 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://i.ibb.co/84sW6Fy/2023-04-13-cssd-officially-becomes-an-associate-member-of-the-pssc.jpg" className='carouselPics object-cover' style={{ height: '480px' }} alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>CSSD officially becomes an associate member of the PSSC
-                        </a>
-                        <p className='pt-2'>April 12, 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://i.ibb.co/dbPj8ff/2023-04-04-sen-risa-graces-emos-f2f-gender-sensitivity-training-sen-hontiveros.jpg" className='object-cover' style={{ height: '480px' }} alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>Sen. Risa graces EMO's F2F gender sensitivity training</a>
-                        <p className='pt-2'>April 04, 2023</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <img src="https://i.ibb.co/CWK75gC/2023-04-03-cssd-formally-partners-with-abo-akademi-university.jpg" className='object-cover carouselPics' style={{ height: '480px' }} alt="" />
-                      <div className='pt-7 text-left'>
-                        <a className='text-red hover:underline hover:cursor-pointer font-bold '>CSSD formally partners with Abo Akademi University</a>
-                        <p className='pt-2'>April 03, 2023</p>
-                      </div>
-                    </div>
-                  </Carousel>
-                </div>
+                  ))}
+                </Carousel>
               </div>
             </div>
+
 
 
             <div className=''>
@@ -272,24 +212,24 @@ export default function home() {
 
 
       <section class="flex flex-col space-y-4 embed-links sm:w-full items-center justify-center my-6 " style={{ marginBottom: '-55px' }}>
-       
-          <div className='flex flex-row embedResponsive items-center justify-center sm:flex-col md:flex-col lg:flex-row '>
-            <div className="flex flex-wrap justify-center twitty lg:mb-6 border-grey">
-              <div className="flex justify-center w-full h-auto ">
-                <div className="twit">
-                  <a class="twitter-timeline" data-height="820" data-theme="dark" href="https://twitter.com/ThePUPOfficial?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-              </div>
-            </div>
 
-            <div class="flex flex-col w-full xl:mb-6 xl:mt-6 xl:m-6 pt-6 ">
-              <div className='youtube-spotMargin flex flex-col space-y-4 items-center justify-center '>
-                <iframe class="youtube" data-height="350" src="https://www.youtube.com/embed/EVp6JBwTudk?list=UU3D3_jrSi3sYmx5L5p5RAwA" title="The Observer Online: Tanglaw Fest 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe class="spotify md:mb-5" data-height="350" style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/6hSNhWq3gSGcSouucc8kl0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div className='flex flex-row embedResponsive items-center justify-center sm:flex-col md:flex-col lg:flex-row '>
+          <div className="flex flex-wrap justify-center twitty lg:mb-6 border-grey">
+            <div className="flex justify-center w-full h-auto ">
+              <div className="twit">
+                <a class="twitter-timeline" data-height="820" data-theme="dark" href="https://twitter.com/ThePUPOfficial?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
             </div>
           </div>
-       
+
+          <div class="flex flex-col w-full xl:mb-6 xl:mt-6 xl:m-6 pt-6 ">
+            <div className='youtube-spotMargin flex flex-col space-y-4 items-center justify-center '>
+              <iframe class="youtube" data-height="350" src="https://www.youtube.com/embed/EVp6JBwTudk?list=UU3D3_jrSi3sYmx5L5p5RAwA" title="The Observer Online: Tanglaw Fest 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="spotify md:mb-5" data-height="350" style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/6hSNhWq3gSGcSouucc8kl0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
       </section>
 
       <section class='bg-gray'>

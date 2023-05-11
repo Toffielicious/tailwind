@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 
 function Nav2() {
   return (
@@ -27,14 +27,16 @@ function Nav2() {
             </li>
             <li className="pt-1 hide">
 
-              <a href="#" className=" font-normal hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer md:px-2 lg:px-4 py-3" >International Affairs</a>
+              <Link href="/inter" className=" font-normal hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer md:px-2 lg:px-4 py-3" >International Affairs</Link>
             </li>
             <li className="pt-1 hide">
               <a href="#" className="font-normal  hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer md:px-2 lg:px-4 py-3"  >Bid Notices and Invitation</a>
             </li>
+          
             <li className="pt-1 xl:pl-72">
-              <a href="#" className=" font-normal  justify-self-end center hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer md:px-2 px-4 py-3" >Contact Us</a>
+              <Link href="/contact" className=" font-normal  justify-self-end center hover:text-white hover:cursor-pointer hover:bg-red text-ssm text-grayer md:px-2 px-4 py-3" >Contact Us</Link>
             </li>
+            
           </ul>
         </div>
       </div>

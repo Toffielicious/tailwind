@@ -63,7 +63,8 @@ module.exports = {
         sf: '#1db854',
         l: '#F0F0F0',
         mb:'#111',
-
+        mred: '#6d0000',
+        ligthgray: '#ececec',
       },
       fontFamily: {
         sanscinzel: ['Cinzel', 'sans-serif'],
