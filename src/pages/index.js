@@ -18,11 +18,11 @@ export default function Home() {
 
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const handlePrevClick = () => {
+  const Prev = () => {
     setSlideIndex((slideIndex - 1 + midSlider.length) % midSlider.length);
   };
 
-  const handleNextClick = () => {
+  const Next = () => {
     setSlideIndex((slideIndex + 1) % midSlider.length);
   };
 
@@ -151,10 +151,10 @@ export default function Home() {
                 
                 <div className="">
                   <div className='flex gap-1'>
-                  <button onClick={handlePrevClick} className="border sliderBtn px-1.5 text-grayest py-1.5 bc rounded-sm items-center hover:bg-red hover:text-white">
+                  <button onClick={Prev} className="border sliderBtn px-1.5 text-grayest py-1.5 bc rounded-sm items-center hover:bg-red hover:text-white">
                   <i class="fa fa-sharp fa-solid fa-chevron-left px-1  text-grayest" style={{ fontSize: '10px' }}></i>
                   </button>
-                  <button onClick={handleNextClick} className="border sliderBtn px-1.5 py-1.5 text-grayest rounded-sm items-center hover:bg-red hover:text-white">
+                  <button onClick={Next} className="border sliderBtn px-1.5 py-1.5 text-grayest rounded-sm items-center hover:bg-red hover:text-white">
                   <i class="fa fa-sharp fa-solid fa-chevron-right px-1 text-grayest" style={{ fontSize: '10px' }}></i>
                   </button>
                   </div>

@@ -7,31 +7,14 @@ const Slider = () =>{
       const [slide, setSlide] = useState(0);
 
       const slides = [
-        {
-            src:'b1.jpg',
-           
-        },
-        {
-            src:'b2.jpg'
-        },
-        {
-            src:'b3.jpg'
-        },
-        {
-            src:'b4.jpg'
-        },
-        {
-            src:'b5.jpg'
-        },
-        {
-            src:'b6.jpg'
-        },
-        {
-            src:'b7.jpg'
-        },
-        {
-            src:'b8.jpg'
-        },
+        { src:'b1.jpg', },
+        { src:'b2.jpg' },
+        { src:'b3.jpg' },
+        { src:'b4.jpg' },
+        { src:'b5.jpg' },
+        { src:'b6.jpg' },
+        { src:'b7.jpg' },
+        { src:'b8.jpg' },
       ]
 
       const Prev = () => {

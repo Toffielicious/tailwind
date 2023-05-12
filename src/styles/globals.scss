@@ -921,6 +921,11 @@ a:hover h4 {
   position: fixed;
   bottom: 15px;
   right: 15px;
+
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .body-margin {
