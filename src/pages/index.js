@@ -183,8 +183,6 @@ export default function Home() {
               </div>
             </div>
 
-
-
             <div className=''>
               <div className='picsMargin flex flex-col gap-3 justify-center  '>
                 <img src="//i.imgur.com/vaNWHC9.jpg" alt="" class="rounded-lg pics hover:cursor-pointer" width={210} height={124} />

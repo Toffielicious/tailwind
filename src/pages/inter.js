@@ -30,6 +30,22 @@ const International = ({ articlesData }) => {
         { name: 'Contact Information', link: 'contactinfo.aspx' },
     ];
 
+    async function getStaticProps({ params }) {
+
+        let article = []
+        await axios.get(`https://api.ahglab.com/api:W7k9W8HQ/articles?id=${params.id}`).then(function (response) {
+            article = response.data
+        })
+
+        return {
+            props: {
+                article: article,
+            },
+            revalidate: 60,
+        }
+    }
+
+
     return (
 
         <>
@@ -96,5 +112,5 @@ const International = ({ articlesData }) => {
     )
 }
 
-export default International
+export default International;
 
